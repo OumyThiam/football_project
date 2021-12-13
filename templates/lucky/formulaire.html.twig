@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+{% form_theme formequipement 'bootstrap_4_layout.html.twig' %}
+
+
+ </br><center><h4> Saisir les inforomations de l'Equipementier </h4></center> 
+
+ {{form_start(formequipement)}}
+
+ 
+
+      {{form_row(formequipement.name, {'attr' : {'placeholder' : "Nom de l'equipement"}})}}
+      {{form_row(formequipement.Marque, {'attr' : {'placeholder' : "Marque de l'equipement"}})}}
+      {{form_row(formequipement.Prix, {'attr' : {'placeholder' : "Prix de l'equipement"}})}}
+      {{form_row(formequipement.Description, {'attr' : {'placeholder' : "Decrire l'equipement"}})}}
+      {{form_row(formequipement.quantite, {'attr' : {'placeholder' : "Le nombre d'equipement"}})}}
+      {{form_row(formequipement.Enregistrer, {'attr' : {'label' : "Enregistrer"}})}}
+
+
+
+{{form_widget(formequipement)}}
+
+
+{{form_end(formequipement)}}
+
+
+{% endblock %}
+
+
+

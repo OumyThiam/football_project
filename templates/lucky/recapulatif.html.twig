@@ -1,0 +1,41 @@
+
+
+{% extends 'base.html.twig'%}
+{%block body %}
+
+
+</br><center><h4> Info Equipement </h4></center></br>
+
+     <table class="table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Desciption</th>
+            <th>Quantite</th>    
+         </tr>
+       </thead>
+    
+        <tbody>
+          <tr>
+            <td>{{footEquipement.name}}</td>
+            <td>{{footEquipement.marque}}</td>
+            <td>{{footEquipement.prix}}</td>
+            <td>{{footEquipement.description}}</td>
+            <td>{{footEquipement.quantite}}</td>
+         
+           
+          </tr>
+
+
+          </tbody>
+
+        
+          </table>
+      
+         
+ 
+
+
+{% endblock %}
